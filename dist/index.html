@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do.it</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+    
+    <div id="header">
+        <h2>do<span id="name-it">.it</span></h2>
+    </div>
+
+
+    <div id="main">
+
+        <div id="project-bg-modal" class="hide">
+            <div id="project-modal">
+
+                <div class="close" id="close-project-form">+</div>
+                <h2 class="form-heading">New Project</h2>
+
+                <form id="project-form">
+                    
+                   <div>
+                        <label for="project-name">Project name*</label><br>
+                        <input type="text" id="project-name" name="project-name" required><br>
+                   </div>
+
+                    <input type="submit" id="project-submit" value="Create Project">
+                </form>
+            </div>
+        </div>
+
+        <div id="task-bg-modal" class="hide">
+            <div id="task-modal">
+
+                <div class="close" id="close-task-form">+</div>
+                <h2 class="form-heading">New Task</h2>
+
+                <form id="task-form">
+                    
+                    <div>
+                        <label for="task-name">Task name*</label><br>
+                        <input type="text" id="task-name" name="task-name" required><br>
+                    </div>
+
+                    <div>
+                        <label for="task-priority">Priority</label><br>
+
+                        <div>
+                            <input type="radio" id="task-high" name="task-priority" value="High">
+                            <label for="task-high">High</label>
+
+                            
+                            <input type="radio" id="task-medium" name="task-priority" value="Medium">
+                            <label for="task-medium">Medium</label>
+                            
+
+                            <input type="radio" id="task-low" name="task-priority" value="Low">
+                            <label for="task-low">Low</label><br>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="task-due">Due</label><br>
+                        <input type="date" id="task-due" name="task-due"><br>
+                    </div>
+
+                    <div>
+                        <label for="task-submit"></label>
+                        <input type="submit" id="task-submit" value="Create Task">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="project-sec">
+
+
+            <div id="project-head">
+                <button id="add-project">+</button>
+                <h2>Projects</h2>
+            </div>
+            
+
+            <div id="project-div">
+        
+            </div>
+        </div>
+
+
+
+
+        <div id="task-sec">
+
+            <div id="task-head">
+                <button id="add-task">+</button>
+                <h2 id="page-heading">Inbox</h2>
+            </div>
+
+            <div id="task-div">
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div id="footer">
+        <p>Copyright <span>&#169;</span> do.it 2022</p>
+    </div>
+
+</body>
+</html>
