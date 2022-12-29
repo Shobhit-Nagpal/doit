@@ -9,7 +9,10 @@ const project = (name) => {
 //Inbox is the default project
 const inbox = project("Inbox");
 projects.push(inbox);
-localStorage.setItem("projects", JSON.stringify(projects));
+
+if (localStorage.getItem("projects") === null) {
+    localStorage.setItem("projects", JSON.stringify(projects))
+}
 
 
 export {projects, project}
